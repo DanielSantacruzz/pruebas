@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<h1>{{options[0]}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    options = [{
+   name: 'Something Cool',
+   value: 'something-cool-value'
+}, {
+   name: 'Something Else',
+   value: 'something-else-value'
+}];
+});
+</script>
+
+
+
+</body>
+</html>
